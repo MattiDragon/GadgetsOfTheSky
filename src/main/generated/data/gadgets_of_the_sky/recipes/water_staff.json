@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "gadgets_of_the_sky:water_shard"
+    },
+    "+": {
+      "item": "minecraft:diamond"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "|",
+    "+"
+  ],
+  "result": {
+    "item": "gadgets_of_the_sky:water_staff"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "gadgets_of_the_sky:sky_altar",
+  "input": {
+    "item": "minecraft:glow_ink_sac"
+  },
+  "output": {
+    "item": "gadgets_of_the_sky:water_shard"
+  }
+}

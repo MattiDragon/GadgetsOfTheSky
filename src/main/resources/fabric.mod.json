@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "gadgets_of_the_sky",
+	"version": "${version}",
+	"name": "Gadgets of the Sky",
+	"description": "Adds various gadgets, useful for travel, combat and more.",
+	"authors": [
+		"MattiDragon"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/gadgets-of-the-sky",
+		"sources": "https://github.com/MattiDragon/GadgetsOfTheSky",
+		"issues": "https://github.com/MattiDragon/GadgetsOfTheSky/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/gadgets_of_the_sky/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.mattidragon.gadgets_of_the_sky.GadgetsOfTheSky"
+		],
+		"client": [
+			"io.github.mattidragon.gadgets_of_the_sky.client.GadgetsOfTheSky"
+		],
+		"fabric-datagen": [
+			"io.github.mattidragon.gadgets_of_the_sky.datagen.GadgetsOfTheSkyDatagen"
+		],
+		"emi": [
+			"io.github.mattidragon.gadgets_of_the_sky.client.compat.emi.GadgetsOfTheSkyEmiPlugin"
+		]
+	},
+	"mixins": [
+		"gadgets_of_the_sky.mixins.json",
+		{
+			"config": "gadgets_of_the_sky.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.2",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

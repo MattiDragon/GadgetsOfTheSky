@@ -1,0 +1,9 @@
+{
+  "type": "gadgets_of_the_sky:sky_altar",
+  "input": {
+    "item": "minecraft:quartz"
+  },
+  "output": {
+    "item": "gadgets_of_the_sky:air_shard"
+  }
+}

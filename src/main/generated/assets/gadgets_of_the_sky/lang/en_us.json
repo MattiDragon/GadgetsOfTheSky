@@ -1,0 +1,12 @@
+{
+  "block.gadgets_of_the_sky.sky_altar": "Sky Altar",
+  "effect.gadgets_of_the_sky.air_swimming": "Air Swimming",
+  "emi.category.gadgets_of_the_sky.sky_altar": "Sky Altar Transformation",
+  "filled_map.gadgets_of_the_sky.sky_island": "Sky Island Explorer Map",
+  "item.gadgets_of_the_sky.air_shard": "Air Shard",
+  "item.gadgets_of_the_sky.air_staff": "Air Staff",
+  "item.gadgets_of_the_sky.water_orb": "Water Orb",
+  "item.gadgets_of_the_sky.water_shard": "Water Shard",
+  "item.gadgets_of_the_sky.water_staff": "Water Staff",
+  "itemGroup.gadgets_of_the_sky.items": "Gadgets of the Sky"
+}

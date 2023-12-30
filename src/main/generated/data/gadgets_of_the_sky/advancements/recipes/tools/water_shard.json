@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_altar": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "gadgets_of_the_sky:sky_island"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gadgets_of_the_sky:water_shard"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_altar"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gadgets_of_the_sky:water_shard"
+    ]
+  }
+}

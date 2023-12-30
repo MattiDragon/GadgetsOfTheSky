@@ -1,0 +1,85 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"base": "minecraft:block/stone",
+		"bulbs": "gadgets_of_the_sky:block/sky_altar_bulbs",
+		"particle": "minecraft:block/chiseled_stone_bricks"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 4],
+			"to": [12, 4, 12],
+			"faces": {
+				"north": {"uv": [8, 0, 16, 4], "texture": "#base"},
+				"east": {"uv": [8, 0, 16, 4], "texture": "#base"},
+				"south": {"uv": [8, 0, 16, 4], "texture": "#base"},
+				"west": {"uv": [8, 0, 16, 4], "texture": "#base"},
+				"down": {"uv": [0, 0, 8, 8], "texture": "#base"}
+			}
+		},
+		{
+			"from": [2, 4, 2],
+			"to": [14, 8, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 12, 4], "texture": "#plate"},
+				"east": {"uv": [0, 0, 12, 4], "texture": "#plate"},
+				"south": {"uv": [0, 0, 12, 4], "texture": "#plate"},
+				"west": {"uv": [0, 0, 12, 4], "texture": "#plate"},
+				"up": {"uv": [0, 4, 12, 16], "texture": "#plate"},
+				"down": {"uv": [0, 4, 12, 16], "texture": "#plate"}
+			}
+		},
+		{
+			"from": [1, 6, 1],
+			"to": [4, 9, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 3], "rotation": 90, "texture": "#bulbs"},
+				"east": {"uv": [0, 0, 3, 3], "rotation": 270, "texture": "#bulbs"},
+				"south": {"uv": [0, 0, 3, 3], "rotation": 180, "texture": "#bulbs"},
+				"west": {"uv": [0, 0, 3, 3], "texture": "#bulbs"},
+				"up": {"uv": [0, 0, 3, 3], "texture": "#bulbs"},
+				"down": {"uv": [0, 0, 3, 3], "rotation": 90, "texture": "#bulbs"}
+			}
+		},
+		{
+			"from": [1, 6, 12],
+			"to": [4, 9, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2.5, 7.5, 13.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 3, 3], "rotation": 270, "texture": "#bulbs"},
+				"east": {"uv": [0, 0, 3, 3], "rotation": 180, "texture": "#bulbs"},
+				"south": {"uv": [0, 0, 3, 3], "texture": "#bulbs"},
+				"west": {"uv": [0, 0, 3, 3], "rotation": 90, "texture": "#bulbs"},
+				"up": {"uv": [0, 0, 3, 3], "rotation": 270, "texture": "#bulbs"},
+				"down": {"uv": [0, 0, 3, 3], "rotation": 180, "texture": "#bulbs"}
+			}
+		},
+		{
+			"from": [12, 6, 12],
+			"to": [15, 9, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [12.5, 7.5, 13.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 3, 3], "rotation": 180, "texture": "#bulbs"},
+				"east": {"uv": [0, 0, 3, 3], "texture": "#bulbs"},
+				"south": {"uv": [0, 0, 3, 3], "rotation": 90, "texture": "#bulbs"},
+				"west": {"uv": [0, 0, 3, 3], "rotation": 270, "texture": "#bulbs"},
+				"up": {"uv": [0, 0, 3, 3], "rotation": 180, "texture": "#bulbs"},
+				"down": {"uv": [0, 0, 3, 3], "rotation": 270, "texture": "#bulbs"}
+			}
+		},
+		{
+			"from": [12, 6, 1],
+			"to": [15, 9, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [13.5, 7.5, 2.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 3, 3], "texture": "#bulbs"},
+				"east": {"uv": [0, 0, 3, 3], "rotation": 90, "texture": "#bulbs"},
+				"south": {"uv": [0, 0, 3, 3], "rotation": 270, "texture": "#bulbs"},
+				"west": {"uv": [0, 0, 3, 3], "rotation": 180, "texture": "#bulbs"},
+				"up": {"uv": [0, 0, 3, 3], "rotation": 90, "texture": "#bulbs"},
+				"down": {"uv": [0, 0, 3, 3], "texture": "#bulbs"}
+			}
+		}
+	]
+}

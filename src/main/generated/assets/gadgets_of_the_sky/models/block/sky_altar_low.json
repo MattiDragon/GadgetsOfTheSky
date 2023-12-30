@@ -1,0 +1,6 @@
+{
+  "parent": "gadgets_of_the_sky:block/sky_altar_template",
+  "textures": {
+    "plate": "gadgets_of_the_sky:block/sky_altar_plate_low"
+  }
+}

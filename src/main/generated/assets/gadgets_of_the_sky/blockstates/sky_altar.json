@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "charges=0": {
+      "model": "gadgets_of_the_sky:block/sky_altar_empty"
+    },
+    "charges=1": {
+      "model": "gadgets_of_the_sky:block/sky_altar_low"
+    },
+    "charges=2": {
+      "model": "gadgets_of_the_sky:block/sky_altar_high"
+    },
+    "charges=3": {
+      "model": "gadgets_of_the_sky:block/sky_altar_full"
+    }
+  }
+}
