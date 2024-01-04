@@ -60,7 +60,8 @@ public class SkyAltarBlock extends Block implements BlockEntityProvider {
         var stack = player.getStackInHand(hand);
 
         if (world.getBlockEntity(pos) instanceof SkyAltarBlockEntity blockEntity) {
-            if (blockEntity.isCrafting()) return ActionResult.PASS;
+            //noinspection SizeReplaceableByIsEmpty
+            if (blockEntity.size() == 0) return ActionResult.PASS;
 
             var storedStack = blockEntity.getStack(0);
             if (storedStack.isEmpty() && blockEntity.isValid(0, stack)) {
