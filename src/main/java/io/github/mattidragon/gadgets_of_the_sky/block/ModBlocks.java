@@ -12,6 +12,8 @@ public class ModBlocks {
     public static final SkyAltarBlock SKY_ALTAR = new SkyAltarBlock(FabricBlockSettings.create()
             .mapColor(MapColor.STONE_GRAY)
             .instrument(Instrument.BASEDRUM)
+            .solid()
+            .nonOpaque()
             .strength(3.5F));
 
     public static final BlockEntityType<SkyAltarBlockEntity> SKY_ALTAR_BLOCK_ENTITY = BlockEntityType.Builder.create(SkyAltarBlockEntity::new, SKY_ALTAR).build(null);
