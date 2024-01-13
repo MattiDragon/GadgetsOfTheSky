@@ -62,6 +62,9 @@ public class SkyAltarBlock extends Block implements BlockEntityProvider {
         if (world.getBlockEntity(pos) instanceof SkyAltarBlockEntity blockEntity) {
             //noinspection SizeReplaceableByIsEmpty
             if (blockEntity.size() == 0) return ActionResult.PASS;
+            if (world.isClient) return ActionResult.SUCCESS;
+
+            if (!blockEntity.checkUnlocked(player)) return ActionResult.FAIL;
 
             var storedStack = blockEntity.getStack(0);
             if (storedStack.isEmpty() && blockEntity.isValid(0, stack)) {
@@ -69,9 +72,7 @@ public class SkyAltarBlock extends Block implements BlockEntityProvider {
                 if (!player.getAbilities().creativeMode) stack.decrement(1);
                 return ActionResult.SUCCESS;
             } else if (!storedStack.isEmpty()) {
-                if (!world.isClient) {
-                    world.playSound(null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 0.2f, 1);
-                }
+                world.playSound(null, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 0.2f, 1);
                 player.getInventory().offerOrDrop(storedStack);
                 blockEntity.setStack(0, ItemStack.EMPTY);
                 return ActionResult.SUCCESS;

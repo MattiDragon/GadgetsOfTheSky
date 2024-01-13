@@ -42,6 +42,8 @@ public class SkyAltarBlockEntity extends LootableContainerBlockEntity {
             return;
         }
 
+        generateLoot(null);
+
         if (this.craftingTime > 0) {
             --this.craftingTime;
             if (this.craftingTime == 0) {
